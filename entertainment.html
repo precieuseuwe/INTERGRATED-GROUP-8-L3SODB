@@ -3,37 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Movie Night Sign Up</title>
+    <title>Movie Night</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Movie Night Sign Up</h1>
+        <h1>Welcome to Movie Night!</h1>
     </header>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Schedule</a></li>
+            <li><a href="#">Movies</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
     <main>
-        <form action="#" method="POST">
-            <div class="form-group">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-            </div>
-            <div class="form-group">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-            <div class="form-group">
-                <label for="phone">Phone:</label>
-                <input type="tel" id="phone" name="phone" required>
-            </div>
-            <div class="form-group">
-                <label for="movie">Favorite Movie:</label>
-                <input type="text" id="movie" name="movie" required>
-            </div>
-            <div class="form-group">
-                <label for="message">Message:</label>
-                <textarea id="message" name="message"></textarea>
-            </div>
-            <button type="submit">Submit</button>
-        </form>
+        <section class="movie">
+            <h2>Featured Movie</h2>
+            <img src="movie_poster.jpg" alt="Featured Movie Poster">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod euismod nisi, eget tempus magna vestibulum sit amet.</p>
+            <button>Watch Trailer</button>
+        </section>
+        <section class="schedule">
+            <h2>Schedule</h2>
+            <table>
+                <tr>
+                    <th>Date</th>
+                    <th>Time</th>
+                    <th>Movie</th>
+                </tr>
+                <tr>
+                    <td>April 27</td>
+                    <td>7:00 PM</td>
+                    <td>The Matrix</td>
+                </tr>
+                <tr>
+                    <td>April 28</td>
+                    <td>6:30 PM</td>
+                    <td>Interstellar</td>
+                </tr>
+                <!-- Add more movie schedule rows here -->
+            </table>
+        </section>
     </main>
     <footer>
         <p>&copy; 2024 Movie Night</p>
