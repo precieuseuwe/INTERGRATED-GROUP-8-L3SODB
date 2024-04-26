@@ -3,104 +3,87 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Course Page</title>
-  <link rel="stylesheet" href="styles.css">
-<style>/* Resetting default margin and padding */
-body, h1, h2, h3, p, ul, li {
-  margin: 0;
-  padding: 0;
-}
-
-/* Basic styling */
-body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-}
-
-header {
-  background-color: #333;
-  color: #fff;
-  padding: 20px;
-}
-
-header h1 {
-  margin: 0;
-}
-
-nav ul {
-  list-style: none;
-}
-
-nav ul li {
-  display: inline;
-  margin-right: 20px;
-}
-
-nav ul li a {
-  color: #fff;
-  text-decoration: none;
-}
-
-main {
-  padding: 20px;
-}
-
-section {
-  margin-bottom: 20px;
-}
-
-footer {
-  background-color: #333;
-  color: #fff;
-  text-align: center;
-  padding: 10px;
-}
-
-</style>
+  <title>Document</title>
 </head>
 <body>
-  <header>
-    <h1>Introduction to HTML and CSS</h1>
-    <nav>
-      <ul>
-        <li><a href="#overview">Overview</a></li>
-        <li><a href="#syllabus">Syllabus</a></li>
-        <li><a href="#instructors">Instructors</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> COURSE REGISTRATION FORM</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background: rgb(235, 207, 48);
+            text-align: center;
+            border-radius: 50px;
+            
+        }button{
+            border-radius: 20px;
+            background-color:rgb(247, 69, 217);
+            display: flex;
+            width: 100px;
+            min-height: 20px;
+            text-align: center;
+        }
+        input.text{
+            display: flex;
+            width: 200px;
+            height: 20px;
+            border: radius 100px;
+             
+        }
+        form{
+            
+            align-items: center;
+            justify-content: center;
+            
+        }
+        input{
+          border-radius: 50px;
+          background-color: aqua;
+        }
+select{
+  border-radius: 50px;
+  background-color: rgb(60, 232, 238);
+}
 
-  <main>
-    <section id="overview">
-      <h2>Overview</h2>
-      <p>This course will introduce you to the basics of HTML and CSS, the building blocks of web development.</p>
-    </section>
-
-    <section id="syllabus">
-      <h2>Syllabus</h2>
-      <ul>
-        <li>Introduction to HTML</li>
-        <li>Introduction to CSS</li>
-        <li>Building a webpage</li>
-        <li>Styling with CSS</li>
-        <li>Responsive design</li>
-      </ul>
-    </section>
-
-    <section id="instructors">
-      <h2>Instructors</h2>
-      <p>Our instructors are experienced web developers with years of industry experience.</p>
-    </section>
-
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>If you have any questions, feel free to contact us at <a href="mailto:info@example.com">info@example.com</a>.</p>
-    </section>
-  </main>
-
-  <footer>
-    <p>&copy; 2024 Course Page. All rights reserved.</p>
-  </footer>
+    </style>
+</head>
+<body>
+    <ins><h1>STUDENT FORM</h1></ins>
+    <form action="">
+ <b> firstname:
+ <input type="text" name="firstname" id=""><br><br>
+<b> secondname:
+<input type="text" name="secondname" id=""><br><br>
+course:
+<select>
+  <option value="">mathematics</option>
+  <option value="">graphic design
+  </option>
+  <option value="">website development</option>
+  <option value="">version control</option>
+  <option value="">ux/ui design</option>
+  <option value="">javascript</option>
+</select><br><br>
+  
+<b> SELECT GENDER:<br>
+  <input type="radio" name="" id=""male>male <br>
+  <input type="radio" name="" id=""female>female<br><br>
+<b> phone:
+  <input type="text" name="" id=""><br><br>
+<b> email:
+  <input type="text" name="" id=""><br><br>
+<b> password:
+  <input type="text" name="" id=""><br><br>
+<b> re enterpassword:
+  <input type="text" name="" id=""><br><br>
+  <input type="submit" name="" id=""submit>
+</form>
+</body>
+</html>
 </body>
 </html>
