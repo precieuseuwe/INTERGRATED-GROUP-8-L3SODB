@@ -3,52 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Movie Night</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Entertainment Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        form {
+            max-width: 400px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        input[type="text"], input[type="email"], select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 12px 20px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        input[type="submit"]:hover {
+            background-color: #555;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Welcome to Movie Night!</h1>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Schedule</a></li>
-            <li><a href="#">Movies</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </nav>
-    <main>
-        <section class="movie">
-            <h2>Featured Movie</h2>
-            <img src="movie_poster.jpg" alt="Featured Movie Poster">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod euismod nisi, eget tempus magna vestibulum sit amet.</p>
-            <button>Watch Trailer</button>
-        </section>
-        <section class="schedule">
-            <h2>Schedule</h2>
-            <table>
-                <tr>
-                    <th>Date</th>
-                    <th>Time</th>
-                    <th>Movie</th>
-                </tr>
-                <tr>
-                    <td>April 27</td>
-                    <td>7:00 PM</td>
-                    <td>The Matrix</td>
-                </tr>
-                <tr>
-                    <td>April 28</td>
-                    <td>6:30 PM</td>
-                    <td>Interstellar</td>
-                </tr>
-                <!-- Add more movie schedule rows here -->
-            </table>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2024 Movie Night</p>
-    </footer>
+    <form>
+        <h2>Entertainment Registration Form</h2>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required>
+
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required>
+            <option value="">Select Gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select>
+
+        <label for="interests">Interests:</label>
+        <textarea id="interests" name="interests" rows="4"></textarea>
+
+        <input type="submit" value="Submit">
+    </form>
 </body>
 </html>
