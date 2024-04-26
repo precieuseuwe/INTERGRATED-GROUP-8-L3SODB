@@ -3,95 +3,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Entertainment Form</title>
+    <title>Movie Night</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h2>Entertainment Preferences</h2>
-    <form action="#" method="POST">
-        <label for="name">Name:</label><br>
-        <input type="text" id="name" name="name" required><br><br>
-
-        <label for="email">Email:</label><br>
-        <input type="email" id="email" name="email" required><br><br>
-
-        <label for="favorite">Favorite type of entertainment:</label><br>
-        <select id="favorite" name="favorite" required>
-            <option value="">Select One</option>
-            <option value="Movies">Movies</option>
-            <option value="Music">Music</option>
-            <option value="Books">Books</option>
-            <option value="Video Games">Video Games</option>
-            <option value="Sports">Sports</option>
-            <option value="Other">Other</option>
-        </select><br><br>
-
-        <label for="comments">Comments:</label><br>
-        <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br><br>
-
-        <input type="submit" value="Submit">
-    </form>
+    <header>
+        <h1>Welcome to Movie Night!</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Schedule</a></li>
+            <li><a href="#">Movies</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="movie">
+            <h2>Featured Movie</h2>
+            <img src="movie_poster.jpg" alt="Featured Movie Poster">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod euismod nisi, eget tempus magna vestibulum sit amet.</p>
+            <button>Watch Trailer</button>
+        </section>
+        <section class="schedule">
+            <h2>Schedule</h2>
+            <table>
+                <tr>
+                    <th>Date</th>
+                    <th>Time</th>
+                    <th>Movie</th>
+                </tr>
+                <tr>
+                    <td>April 27</td>
+                    <td>7:00 PM</td>
+                    <td>The Matrix</td>
+                </tr>
+                <tr>
+                    <td>April 28</td>
+                    <td>6:30 PM</td>
+                    <td>Interstellar</td>
+                </tr>
+                <!-- Add more movie schedule rows here -->
+            </table>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Movie Night</p>
+    </footer>
 </body>
 </html>
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+/* Reset default margin and padding */
+* {
     margin: 0;
     padding: 0;
-}
-
-h2 {
-    color: #333;
-}
-
-form {
-    max-width: 400px;
-    margin: 20px auto;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-label {
-    display: block;
-    margin-bottom: 5px;
-    color: #333;
-}
-
-input[type="text"],
-input[type="email"],
-select,
-textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
     box-sizing: border-box;
 }
 
-select {
-    height: 40px;
+/* Style the header */
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
 }
 
-textarea {
-    height: 100px;
+/* Style the navigation menu */
+nav ul {
+    list-style-type: none;
+    background-color: #333;
+    overflow: hidden;
 }
 
-input[type="submit"] {
-    background-color: #007bff;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s;
+nav ul li {
+    float: left;
 }
 
-input[type="submit"]:hover {
-    background-color: #0056b3;
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
 }
 
-input[type="submit"]:focus {
-    outline: none;
+nav ul li a:hover {
+    background-color: #111;
+}
 
+/* Style the main content */
+main {
+    padding: 20px;
+}
+
+.movie {
+    margin-bottom: 40px;
+}
+
+.movie img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+/* Style the footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
