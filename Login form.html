@@ -1,161 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-<head></head>
-    <title>student Login form</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
 <style>
-    body{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        min-height: 100vh;
-        background-color:darkcyan;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    *{
-    padding: 0;
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
     margin: 0;
-    font-family: "poppins" sans-serif;
+}
+form {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 500px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+label {
+    margin-top: 10px;
+}
+input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
     box-sizing: border-box;
 }
-.wrapper{
-    width: 420px;
-    height: 500px;
-    background:transparent;
-    border: 2px solid rgba(225,255,255,.2);
-    backdrop-filter: blur(20px);
-    color: rgb(7,5,5);
-    border-radius: 10px;
-    padding: 30px 80px;
-    border-radius: 20px;
-    padding: 30px 80px;
-}
-.wrapper h1{
-    font-size: 36px;
-    text-align: center;
-}
-.wrapper .input-box{
-    position: relative;
+button[type="submit"] {
     width: 100%;
-    height: 50px;
-    margin: 30px;
-}
-.input-box input{
-    width: 100%;
-    height: 100%;
-    background: transparent;
-    border: 2px solid rgba(12,12,12, 0.929);
-    border-radius: 40px;
-    font-size: 16px;
-    padding: 20px;
-}
-.input-box input::placeholder{
-    color: #000;
-}
-.input-box i{
-    position: absolute;
-    right: 20px;
-    top: 50px;
-}
-.remember-forget{
-    font-size: 14.5px;
-    margin: 15px;
-}
-.remember-forget a{
-    color: black;
-    font-weight: 500;
-}
-.btn{
-    width: 100%;
-    height: 45px;
-    background: white;
+    background:rgb(255, 196, 248);
+    color: white;
+    padding: 14px 20px;
+    margin-top: 20px;
     border: none;
-    outline: none;
-    border-radius: 40px;
-    box-shadow: 0 0 10px rgba(8,100,238, 0.97);
-    cursor:grab ;
-    font-size: 16px;
-    font-size: 16px;
-    color: #333;
-    font-weight: 600;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
 }
-.btn:hover{
-    background-color: rgb(166,107,171);
-}
-.register-link{
-    font-size: 14.5px;
-    text-align: center;
-    margin-top: 20px 0 15px;
-    padding: 15px;
-}
-.register-link p a{
-    color: rgb(17,17,17);
-    font-weight: 600;
-}
-.register-link p a:hover{
-    text-decoration: underline;
+button:hover {
+    background-color: #0071b3;
 }
 a{
-    padding: 40px;
-    margin: 10px;
+    align-items: center;
+    border: #ccc;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-decoration: none;
 }
-.header{
-    height: 100px;
-    display: flex;
-}
-.logo{
-    background-image: url(back.jpg);
-    background-repeat: no-repeat;
-    background-size: 100px;
-}
-.logo, .announce{
-    flex: 1;
-}
-.nav{
-    height: 100px;
-    text-align: center;
-    font-style: italic;
-    font-size: 50px;
-    position: sticky;
-    top:0;
-}
-.section{
-    background-color:rgb(212,232,245);
-    height: 500px;
-    text-align: center;
-    font-size: 30px;
-}
-.footer{
-    background-color: rgba(28,46,53,0.826);
-    height: 200px;
-}
 </style>
-</head>
 <body>
-    <div class="wrapper">
-        <form action="">
-    <h1>Login</h1>
-    <div class="input-box">
-        <input type="text" placeholder="STUDENT ID:" required>
-        <i class="bx bxs-user"></i>
-    </div>
-    <div class="input-box">
-        <input type="password" placeholder="password" required>
-        <i class="bx bxs-lock-alt"></i>
-    </div>
-    <div class="remember-forget">
-        <label >
-            <input type="checkbox">Remember me
-        </label>
-        <a href="">forgot password?</a>
-    </div>
-    <button type="submit" class="btn">Login</button>
-    <div class="register-link">
-        <p>don't have an account?</p>
-        <a href="">Register</a>
-    </div>
+    <form action="">
+    <label >Student name</label><br>
+    <input type="text" placeholder="Student name" id="name"><br><br>
+     <label>Student ID</label><br>
+    <input type="text" placeholder="Student ID" id="name"><br><br>
+     <label>Password</label><br>
+    <input type="password" placeholder="Password" id="name"><br><br>
+    <a href="">Forgot password</a><br><br>
+    <button type="submit">Login</button>
 </form>
-</div>
+<script>
+     
+    </script>
 </body>
 </html>
